@@ -25,10 +25,10 @@ steps:
     image: 'codefresh/cli:latest'
     commands:
       - codefresh run todaywasawesome/example-voting-app/deploy-staging -b=${{CF_BRANCH}} -s=${{CF_REVISION}} --enable-notifications \
-      -v HELM_CHART_NAME=${{HELM_CHART_NAME}} \
-      -v HELM_RELEASE_NAME=${{HELM_RELEASE_NAME}} \
-      -v KUBE_CONTEXT=${{KUBE_CONTEXT}} \
-      -v KUBE_NAMESPACE=${{KUBE_NAMESPACE}} \
+  #    -v HELM_CHART_NAME=${{HELM_CHART_NAME}} \
+  #    -v HELM_RELEASE_NAME=${{HELM_RELEASE_NAME}} \
+  #    -v KUBE_CONTEXT=${{KUBE_CONTEXT}} \
+  #    -v KUBE_NAMESPACE=${{KUBE_NAMESPACE}} \
       -d
   SeleniumTests:
     title: Selenium Tests
